@@ -1,0 +1,21 @@
+Pour créer un projet Python :
+- On crée un dossier vide
+- On crée une venv :
+    - Option 1 : Avec Pycharm - Bien vérifier le chemin ET la version.
+    (File > Settings > Project > Python Interpreter > Add New > OK)
+    - Option 2 : Création "à la main" dans le terminal
+        python -m venv venv
+        Puis on active la venv :
+            cd venv
+            cd Scripts
+            ./Activate
+   - On vérifie dans terminal son activation (le (venv) au début)
+
+Créer un .exe :
+- Installer le package Pyinstaller
+    pip install pyinstaller
+    pyinstaller --onefile main.py
+
+Gérer les dépendances :
+- pip freeze > requirements.txt
+- pip install -r requirements.txt
